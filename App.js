@@ -1,6 +1,6 @@
 import {StatusBar} from 'expo-status-bar';
 import React from 'react';
-import {StyleSheet, Text, View, Image, ScrollView, ImageBackground } from 'react-native';
+import {StyleSheet, Text, View, Image, ScrollView, ImageBackground, TouchableOpacity, Button } from 'react-native';
 import { SearchBar } from "react-native-elements/dist/searchbar/SearchBar";
 import { Card } from "react-native-elements";
 
@@ -236,6 +236,17 @@ export default function App() {
                         </Card>
                     </ScrollView>
 
+                </View>
+
+
+                <View style={{marginTop: 15, marginBottom: 25}}>
+                    <View style={{flexDirection: 'row', justifyContent: 'center', alignContent: 'center'}}>
+                        <TouchableOpacity style={{backgroundColor: '#00c2b3', textAlign: 'center', borderRadius: 10, width: 300}}>
+                            <View style={styles.button}>
+                                <Text style={{textAlign: 'center',paddingVertical: 10, color: 'white' }}>Afficher les 3260 restaurants</Text>
+                            </View>
+                        </TouchableOpacity>
+                    </View>
                 </View>
 
             </ScrollView>
